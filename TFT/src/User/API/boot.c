@@ -17,6 +17,7 @@ const char iconBmpName[][20]={
 "Full", "Half",
 "Rotate", "Language", "TP_Adjust", "About", "Disconnect", "BaudRate",
 "Percentage", "BabyStep", "Mmm_001", "OnBoardSD", "OnTFTSD", "U_Disk", "Runout",
+"Sim", "LEVEL_Z","LEVEL_3_POINT", "LEVEL_CLEAR", "LEVEL_PROBE", "LEVEL_FILL_BLANKS", "LEVEL_SAVE",
 }; 
 
 u8 scanUpdateFile(void)

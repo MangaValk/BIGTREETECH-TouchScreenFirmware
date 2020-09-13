@@ -13,7 +13,11 @@ static const char bsdnoprintingmagic[] = "Not SD printing";
 #endif
 
 
-#define ACK_MAX_SIZE 300
+#ifdef BIGTREE_TFT24_V1_1
+    #define ACK_MAX_SIZE 300
+#else
+    #define ACK_MAX_SIZE 1024
+#endif
 
 void setCurrentAckSrc(uint8_t src);
 void parseACK(void);

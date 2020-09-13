@@ -54,7 +54,7 @@ MENUITEMS settingsItems = {
 // title
 LABEL_SETTINGS,
 // icon                       label
- {{ICON_ROTATE_UI,            LABEL_ROTATE_UI},
+ {{ICON_SIM,            LABEL_12864_SIM},
   {ICON_LANGUAGE,             LABEL_LANGUAGE},
   {ICON_TOUCHSCREEN_ADJUST,   LABEL_TOUCHSCREEN_ADJUST},
   {ICON_SCREEN_INFO,          LABEL_SCREEN_INFO},
@@ -114,10 +114,12 @@ void menuSettings(void)
     switch(key_num)
     {
       case KEY_ICON_0:
-        infoSettings.rotate_ui = !infoSettings.rotate_ui;
-        LCD_RefreshDirection();
-        TSC_Calibration();
-        menuDrawPage(&settingsItems);        
+        // infoSettings.rotate_ui = !infoSettings.rotate_ui;
+        // LCD_RefreshDirection();
+        // TSC_Calibration();
+        // menuDrawPage(&settingsItems);            
+        infoMenu.menu[++infoMenu.cur] = menuST7920;
+        break;    
         break;
       
       case KEY_ICON_1: 

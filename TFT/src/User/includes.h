@@ -64,6 +64,8 @@
 #include "Speed.h"
 #include "BabyStep.h"
 
+#include "Leveling.h"
+
 #include "Extrude.h"
 #include "Fan.h"
 #include "Settings.h"
@@ -160,6 +162,14 @@ enum
   ICON_SD_SOURCE,
   ICON_U_DISK,
   ICON_RUNOUT,
+
+  ICON_SIM,
+  ICON_LEVEL_Z,
+  ICON_LEVEL_3_POINT,
+  ICON_LEVEL_CLEAR,
+  ICON_LEVEL_PROBE,
+  ICON_LEVEL_FILL_BLANKS,
+  ICON_LEVEL_SAVE,
 //  ICON_RESERVE
 };
 

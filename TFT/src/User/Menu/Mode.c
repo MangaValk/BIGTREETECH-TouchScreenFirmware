@@ -40,7 +40,7 @@ void infoMenuSelect(void)
       #ifdef SHOW_BTT_BOOTSCREEN
       LOGO_ReadDisplay();
       while(OS_GetTime() - startUpTime < 300)  //Display 3s logo
-      {                                                                                                                     
+      {                                                                                                 
         loopProcess();	
       }
       #endif
@@ -75,7 +75,7 @@ void menuMode(void)
   
   while(infoMenu.menu[infoMenu.cur] == menuMode)
   {
-    if(LCD_ReadBtn(LCD_BUTTON_INTERVALS))
+    if(LCD_ReadBtn(LCD_BUTTON_INTERVALS)) // wisselen tussen 2 modes
     {
       break;
     }

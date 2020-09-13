@@ -2,10 +2,10 @@
 #define _CONFIGRATION_H_
 
 #define TOOL_NUM     1    //set in 1~6
-#define EXTRUDER_NUM 1    //set in 1~6
+#define EXTRUDER_NUM 2    //set in 1~6
 #define FAN_NUM      1    //set in 1~6
 
-#define HEAT_MAX_TEMP    {150,    275,       275,       275,       275,       275,       275}    //max temperature can be set
+#define HEAT_MAX_TEMP    {50,    220,       220,       275,       275,       275,       275}    //max temperature can be set
 #define HEAT_SIGN_ID     {"B:",   "T0:",     "T1:",     "T2:",     "T3:",     "T4:",     "T5:"}
 #define HEAT_DISPLAY_ID  {"Bed",  "T0",      "T1",      "T2",      "T3",      "T4",      "T5"}
 #define HEAT_CMD         {"M140", "M104 T0", "M104 T1", "M104 T2", "M104 T3", "M104 T4", "M104 T5" };
@@ -30,10 +30,10 @@
 #define Z_MIN_POS 0
 #define X_MAX_POS 300
 #define Y_MAX_POS 300
-#define Z_MAX_POS 400
+#define Z_MAX_POS 300
 
 // Specify a Pause position as { X, Y, Z_raise }
-#define NOZZLE_PAUSE_RETRACT_LENGTH 15   // (mm)
+#define NOZZLE_PAUSE_RETRACT_LENGTH 30   // (mm)
 #define NOZZLE_PAUSE_PURGE_LENGTH   20   // (mm)
 #define NOZZLE_PAUSE_X_POSITION     (X_MIN_POS + 10)  // (mm) Must be an integer
 #define NOZZLE_PAUSE_Y_POSITION     (Y_MIN_POS + 10)  // (mm) Must be an integer
@@ -50,7 +50,7 @@
 #define ST7920_FNCOLOR GREEN
 
 // Show BTT bootscreen when starting up
-#define SHOW_BTT_BOOTSCREEN
+//#define SHOW_BTT_BOOTSCREEN
 
 // Text displayed at the top of the LCD in 12864 mode
 #define ST7920_BANNER_TEXT "LCD12864 Simulator"

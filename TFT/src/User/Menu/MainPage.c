@@ -1,7 +1,7 @@
 #include "MainPage.h"
 #include "includes.h"
 
-//1¸ötitle(±êÌâ), ITEM_PER_PAGE¸öitem(Í¼±ê+±êÇ©) 
+//1ï¿½ï¿½title(ï¿½ï¿½ï¿½ï¿½), ITEM_PER_PAGEï¿½ï¿½item(Í¼ï¿½ï¿½+ï¿½ï¿½Ç©) 
 const MENUITEMS mainPageItems = {
 //   title
 LABEL_READY,
@@ -35,8 +35,9 @@ void menuMain(void)
       case KEY_ICON_5: infoMenu.menu[++infoMenu.cur] = menuFan;       break;
       case KEY_ICON_6: infoMenu.menu[++infoMenu.cur] = menuSettings;  break;
       case KEY_ICON_7: 
-        storeCmd("G28\n");
-        storeCmd("G29\n");
+        // storeCmd("G28\n");
+        // storeCmd("G29\n"); // todo: edit me :P
+        infoMenu.menu[++infoMenu.cur] = menuLeveling;
         break;
       default:break;
     }		

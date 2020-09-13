@@ -40,9 +40,9 @@
     #define EN_PERCENTAGE_SPEED     "Speed"
     #define EN_PERCENTAGE_FLOW      "Flow"    
     #define EN_VALUE_ZERO           "Zero"
-    #define EN_1_DEGREE             "1¡æ"
-    #define EN_5_DEGREE             "5¡æ"
-    #define EN_10_DEGREE            "10¡æ"
+    #define EN_1_DEGREE             "1c"
+    #define EN_5_DEGREE             "5c"
+    #define EN_10_DEGREE            "10c"
     #define EN_X_INC                "X+"
     #define EN_Y_INC                "Y+"
     #define EN_Z_INC                "Z+"
@@ -92,5 +92,14 @@
     #define EN_READ_ONBOARDSD_ERROR "Read Onboard SD card error!"
     
     #define EN_FILAMENT_RUNOUT      "filament runout!"
+
+    #define EN_12864_SIM            "12864 sim"
+    
+    #define EN_LEVEL_Z                "Level Z"
+    #define EN_LEVEL_3_POINT          "3-point level"
+    #define EN_LEVEL_CLEAR            "clear level"
+    #define EN_LEVEL_PROBE            "probe bed"
+    #define EN_LEVEL_FILL_BLANKS      "fill blanks"
+    #define EN_LEVEL_SAVE             "save mesh"
     
 #endif
